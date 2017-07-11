@@ -13,7 +13,24 @@
 		48180A771F1005B3001419FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48180A751F1005B3001419FE /* LaunchScreen.storyboard */; };
 		48180A7F1F1005FD001419FE /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48180A7E1F1005FD001419FE /* MainTableViewController.swift */; };
 		48180A811F1007FE001419FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48180A801F1007FE001419FE /* Dog.swift */; };
+		4826901A1F1550F500169DB7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482690191F1550F500169DB7 /* Alamofire.framework */; };
+		4826901B1F1550F500169DB7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 482690191F1550F500169DB7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4826901E1F1553DC00169DB7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4826901D1F1553DC00169DB7 /* Server.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4826901C1F1550F500169DB7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4826901B1F1550F500169DB7 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48180A691F1005B3001419FE /* DesafioWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		48180A781F1005B3001419FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48180A7E1F1005FD001419FE /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		48180A801F1007FE001419FE /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		482690191F1550F500169DB7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		4826901D1F1553DC00169DB7 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4826901A1F1550F500169DB7 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +60,7 @@
 		48180A601F1005B3001419FE = {
 			isa = PBXGroup;
 			children = (
+				482690191F1550F500169DB7 /* Alamofire.framework */,
 				48180A6B1F1005B3001419FE /* DesafioWebService */,
 				48180A6A1F1005B3001419FE /* Products */,
 			);
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				48180A6C1F1005B3001419FE /* AppDelegate.swift */,
+				4826901D1F1553DC00169DB7 /* Server.swift */,
 				48180A701F1005B3001419FE /* Main.storyboard */,
 				48180A7E1F1005FD001419FE /* MainTableViewController.swift */,
 				48180A801F1007FE001419FE /* Dog.swift */,
@@ -77,6 +99,7 @@
 				48180A651F1005B3001419FE /* Sources */,
 				48180A661F1005B3001419FE /* Frameworks */,
 				48180A671F1005B3001419FE /* Resources */,
+				4826901C1F1550F500169DB7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +165,7 @@
 			files = (
 				48180A7F1F1005FD001419FE /* MainTableViewController.swift in Sources */,
 				48180A6D1F1005B3001419FE /* AppDelegate.swift in Sources */,
+				4826901E1F1553DC00169DB7 /* Server.swift in Sources */,
 				48180A811F1007FE001419FE /* Dog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +290,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9QUZLTLDFZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DesafioWebService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.336.DesafioWebService;
@@ -279,6 +307,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9QUZLTLDFZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DesafioWebService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.336.DesafioWebService;
@@ -306,6 +338,7 @@
 				48180A7D1F1005B3001419FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
